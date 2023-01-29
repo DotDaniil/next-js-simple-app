@@ -1,8 +1,9 @@
 import Link from "next/link";
+import MainContainer from "../components/MainContainer";
 
 const Users = ({ users }) => {
     return (
-        <div>
+        <MainContainer keywords={"users"}>
             <h1>Список пользователей</h1>
                 <ul className="userList">
                     {users.map((user, idx) =>
@@ -28,7 +29,7 @@ const Users = ({ users }) => {
                   }
                 `}
             </style>
-        </div>
+        </MainContainer>
     );
 };
 
